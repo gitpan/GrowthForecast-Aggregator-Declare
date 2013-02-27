@@ -24,10 +24,36 @@ SYNOPSIS
                 );
             };
         };
+        for my $query (@queries) {
+            $query->run(
+                dbh => $dbh,
+                ua  => $ua,
+                service => 'blog_service',
+                endpoint => 'http://exapmle.com/api/',
+            );
+        }
 
 DESCRIPTION
     GrowthForecast::Aggregator::Declare is a declarative client library for
     GrowthForecast
+
+DSL
+    gf { ... }
+        This makes a scope to declare GrowthForecast metrics.
+
+        This function returns list of Aggregators.
+
+    section $name:Str, \&block
+            section 'member' => sub { ... };
+
+        This function defines section. Under this function, db() and
+        db_multi() function use the section name automatically.
+
+    db(%args)
+        Create GrowthForecast::Aggregator::DB object using %args.
+
+    db_multi(%args)
+        Create GrowthForecast::Aggregator::DBMulti object using %args.
 
 AUTHOR
     Tokuhiro Matsuno <tokuhirom AAJKLFJEF@ GMAIL COM>
