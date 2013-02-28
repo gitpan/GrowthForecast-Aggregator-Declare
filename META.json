@@ -41,6 +41,10 @@
       }
    },
    "provides" : {
+      "GrowthForecast::Aggregator::Callback" : {
+         "file" : "lib/GrowthForecast/Aggregator/Callback.pm",
+         "version" : 0
+      },
       "GrowthForecast::Aggregator::DB" : {
          "file" : "lib/GrowthForecast/Aggregator/DB.pm",
          "version" : 0
@@ -51,7 +55,7 @@
       },
       "GrowthForecast::Aggregator::Declare" : {
          "file" : "lib/GrowthForecast/Aggregator/Declare.pm",
-         "version" : "v0.0.2"
+         "version" : "v0.1.0"
       }
    },
    "release_status" : "stable",
@@ -60,5 +64,5 @@
          "http://dev.perl.org/licenses/"
       ]
    },
-   "version" : "v0.0.2"
+   "version" : "v0.1.0"
 }

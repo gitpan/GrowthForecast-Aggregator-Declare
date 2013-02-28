@@ -55,6 +55,9 @@ DSL
     db_multi(%args)
         Create GrowthForecast::Aggregator::DBMulti object using %args.
 
+    callback(%args)
+        Create GrowthForecast::Aggregator::Callback object using %args.
+
 AUTHOR
     Tokuhiro Matsuno <tokuhirom AAJKLFJEF@ GMAIL COM>
 
