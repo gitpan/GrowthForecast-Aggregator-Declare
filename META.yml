@@ -29,7 +29,7 @@ provides:
     version: 0
   GrowthForecast::Aggregator::Declare:
     file: lib/GrowthForecast/Aggregator/Declare.pm
-    version: v0.1.0
+    version: v0.1.1
 requires:
   Exporter: 0
   HTTP::Request::Common: 6
@@ -38,4 +38,4 @@ requires:
   perl: 5.010001
 resources:
   license: http://dev.perl.org/licenses/
-version: v0.1.0
+version: v0.1.1
